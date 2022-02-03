@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Tube : MonoBehaviour
 {
+#region MemberFields
     [SerializeField, Range(0, 100)]
     private int score = 20;
     [SerializeField]
@@ -17,7 +18,7 @@ public class Tube : MonoBehaviour
     private List<GameObject> ballContainer = new List<GameObject>();
     private GameMode gameMode;
 
-
+#endregion MemberFields
     private void Awake()
     {
         audioSource = this.GetComponent<AudioSource>();
